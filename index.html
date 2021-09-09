@@ -11,18 +11,18 @@
 
 
     <div class="container mt-5">
-        <form method="POST" action="">
+        <form method="POST" action="dataForm.php">
         <div class="row justify-content-center">
             <div class="col-4">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" class="form-control"  placeholder="Escriba su Nombre">
+                    <input type="text" name="nombre" placeholder="Escriba su Nombre"  class="form-control">
                 </div>
             </div>
             <div class="col-4">
                 <div class="form-group">
                     <label for="Clave">Clave</label>
-                    <input type="password" name="clave" class="form-control" placeholder="Escriba su Clave">
+                    <input type="password" name="clave" placeholder="Escriba su Clave"  class="form-control">
                 </div>
             </div>
           </div>
@@ -30,20 +30,20 @@
             <div class="col-4">
                 <div class="form-group">
                     <label for="Email">Email</label>
-                    <input type="email" name="email" class="form-control" placeholder="Enter email">
+                    <input type="email" name="email" placeholder="Enter email"  class="form-control">
                 </div>
             </div>
             <div class="col-2">
                 <label for="Email">Sexo</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                    <input type="checkbox" name="sexo"  id="Masculino" value="Masculino" class="form-check-input">
+                    <label for="Masculino" class="form-check-label">
                       Masculino
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                    <label class="form-check-label" for="defaultCheck2">
+                    <input type="checkbox" name="sexo" id="Femenino" value="Femenino"  disabled class="form-check-input">
+                    <label for="Femenino" value="Femenino" class="form-check-label">
                       Femenino
                     </label>
                   </div>
@@ -52,19 +52,29 @@
             <div class="col-2">
                 <label for="Email">Estatus</label>
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <input type="radio"  name="status" id="Activo" value="Activo" checked class="form-check-input">
+                <label class="form-check-label" for="Activo">
                     Activo
                 </label>
                 </div>
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                <input type="radio" name="status" id="Inactivo" value="Inactivo" class="form-check-input">
+                <label class="form-check-label" for="Inactivo">
                     Inactivo
                 </label>
                 </div>
             </div>
           </div>
+
+          <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="nombre">Ejemplo de minlength & maxlength</label>
+                    <input type="text" name="nombre" minlength="4" maxlength="5" class="form-control">
+                </div>
+            </div>
+          </div>
+
           <div class="col-12 text-center mt-5 mb-5">
             <button type="submit" class="btn btn-primary">Enviar Información</button>
           </div>
